@@ -1,7 +1,14 @@
 import requests
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 # ⚠️ GANTI INI DENGAN API KEY ANDA DARI WEBSITE SPOONACULAR
-API_KEY = "Masukan_API_KEY"
+API_KEY = os.getenv("SPOONACULAR_API_KEY")
+
+if not API_KEY:
+    raise ValueError("Gawat! API Key tidak ditemukan di file .env")
 
 def get_recipes_from_ingredients(ingredients_list):
     """
