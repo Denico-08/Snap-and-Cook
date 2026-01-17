@@ -1,0 +1,31 @@
+name: snap_cook
+description: Aplikasi deteksi bahan makanan dengan AI.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Icons Apple
+  cupertino_icons: ^1.0.6
+  
+  # --- PACKAGES YANG ANDA PAKAI ---
+  http: ^1.2.0            # Untuk koneksi ke Python
+  camera: ^0.10.5+9       # Untuk buka kamera
+  path_provider: ^2.1.2   # Untuk simpan foto sementara
+  path: ^1.9.0            # Untuk mengolah nama file
+  permission_handler: ^11.3.0 # Untuk izin Android
+  dio: ^5.9.0
+  image_picker: ^1.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
