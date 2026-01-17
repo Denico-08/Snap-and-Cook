@@ -1,16 +1,69 @@
-# --- Python ---
+# ==========================
+# 1. RAHASIA (JANGAN DIHAPUS)
+# ==========================
+.env
+.venv
+env/
+venv/
+*.key
+*.pem
+secrets.yaml
+
+# Android/Flutter Secrets
+**/android/key.properties
+**/android/local.properties
+**/google-services.json
+**/GoogleService-Info.plist
+**/*.keystore
+**/*.jks
+
+# ==========================
+# 2. SISTEM & EDITOR (SAMPAH)
+# ==========================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+
+# ==========================
+# 3. PYTHON (BACKEND)
+# ==========================
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
-venv/
-.env
 
-# --- Flutter ---
-.dart_tool/
-.flutter-plugins
-.flutter-plugins-dependencies
-.packages
-build/
-ios/.generated/
-.pub-cache/
-android/.gradle
+# Local Database (Kecuali Anda mau upload DB)
+*.sqlite3
+*.db
+
+# Virtual Environment folder
+Backend/venv/
+Backend/.venv/
+
+# ==========================
+# 4. FLUTTER (MOBILE APP)
+# ==========================
+# Folder build raksasa
+mobile_app/build/
+
+# Cache & Tools Flutter
+mobile_app/.dart_tool/
+mobile_app/.flutter-plugins
+mobile_app/.flutter-plugins-dependencies
+mobile_app/.pub-cache/
+mobile_app/.pub/
+
+# Android specific generated files
+mobile_app/android/.gradle/
+mobile_app/android/app/build/
+mobile_app/android/app/src/main/assets/
+
+# iOS specific generated files
+mobile_app/ios/.generated/
+mobile_app/ios/Flutter/Generated.xcconfig
+mobile_app/ios/Flutter/flutter_export_environment.sh
+mobile_app/ios/Pods/
